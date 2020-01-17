@@ -1,0 +1,29 @@
+.input {
+    padding-left: 5px;
+    display: block;
+    height: auto;
+}
+.passwordContainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: relative;
+}
+.form-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    max-width: 415px;
+    width: 100%;
+}
+.form-container > div {
+    margin: 0px 0 20px;
+    width: 100%;
+    display: flex;
+}
+.form-container > div > input {
+    flex: 0 1 90%;
+}
+.form-container > div > label {
+    flex: 0 1 10%;
+}

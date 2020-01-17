@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*[disabled=true],
+*[disabled] {
+    cursor: default;
+}
+label {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+input:hover:not(.no-hover) {
+    border: 2px solid #8a8989!important;
+}
+input.ng-invalid.ng-touched {
+    border: 2px solid #df161685!important;
+    color: #df161685;
+}
+input.ng-invalid.ng-touched::placeholder,
+.red-icon{
+    color: #df1616;
+}
+input.ng-valid.ng-touched, .green-icon {
+    border: 2px solid #02ac3a9a!important;
+    color: #05471b;
+}
+
+#toast-container > div {
+    opacity: 1;
+}
