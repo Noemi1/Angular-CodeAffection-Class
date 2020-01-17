@@ -2,12 +2,14 @@
     <div class="wrapper">
         <nav class="header__navigation">
             <div class="header__navigation-logo">
-                <h1><a>Logo</a></h1>
+                <h1>
+                    <a [routerLink]="['/']" routerLinkActive="active">Logo</a>
+                </h1>
             </div>
             <div class="header__navigation-links">
-                <a> Listagem</a>
-                <a> Sobre Nós</a>
-                <a> Login</a>
+                <a [routerLink]="['/dados']" routerLinkActive="active"> dadosTeste</a>
+                <a [routerLink]="['/sobre']" routerLinkActive="active"> Sobre Nós</a>
+                <a [routerLink]="['/login']" routerLinkActive="active"> Login</a>
             </div>
         </nav>
     </div>

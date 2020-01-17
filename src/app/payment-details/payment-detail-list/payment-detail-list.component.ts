@@ -31,6 +31,7 @@ export class PaymentDetailListComponent implements OnInit {
     this.selected = pd;
     return pd;
   }
+
   onDelete(pd: PaymentDetail) {
     if (confirm('Tem certeza que deseja deletar o registro?')) {
       this.service.deletePaymentDetail(pd.PMId).subscribe(

@@ -8,6 +8,11 @@ import { PaymentDetailComponent } from './payment-details/payment-detail/payment
 import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { PaymentDetailListComponent } from './payment-details/payment-detail-list/payment-detail-list.component';
 import { PaymentDetailService } from './shared/payment-detail.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 // Layout
 import { PasswordModule } from 'primeng/password';
@@ -16,8 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -27,7 +31,10 @@ import { FooterComponent } from './footer/footer.component';
     PaymentDetailComponent,
     PaymentDetailListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SobreNosComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +44,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    routing
   ],
   providers: [
     PaymentDetailService,
