@@ -24,7 +24,7 @@ export class PaymentDetailListComponent implements OnInit {
     console.log(this.service);
   }
   populateForm(pd: PaymentDetail) {
-    this.service.formData = Object.assign({}, pd);
+    this.service.formData = pd;
   }
 
   onSelect(pd: PaymentDetail) {

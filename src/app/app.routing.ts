@@ -11,6 +11,5 @@ const APP_ROUTES: Routes = [
     { path: 'login', component: LoginComponent},
     { path: 'sobre', component: SobreNosComponent},
     { path: 'dados', component: PaymentDetailsComponent}
-
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);

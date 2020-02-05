@@ -33,9 +33,8 @@ export class PaymentDetailComponent implements OnInit {
             CVV: '',
         };
     }
-
     onSubmit(form: NgForm) {
-        if (this.service.formData.PMId == 0) {
+        if (this.service.formData.PMId === 0) {
             this.insertRecord(form);
         } else {
             this.updateRecord(form);
